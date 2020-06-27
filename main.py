@@ -1,16 +1,7 @@
-num = []
+import Tkinter as tk
 
-def sum(x):
-    result = 0
-    for y in x:
-        result += y
-    return result
-
-while True:
-    temp = input("Enter a number or 'sum' to sum up your numbers: ")
-    if(temp == sum):
-        break
-    else:
-        num.append(temp)
-
-print(sum(num))
+app = tk.Tk(screenName="Snake",baseName="Snake", className="Snake")
+button = tk.Button()
+button["text"] = "Hello World"
+button.pack()
+app.mainloop()
