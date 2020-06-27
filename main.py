@@ -1,7 +1,16 @@
-def sum(*list):
+num = []
+
+def sum(x):
     result = 0
-    for x in list:
-        result += x
+    for y in x:
+        result += y
     return result
 
-print(sum(2, 5, 13))
+while True:
+    temp = input("Enter a number or 'sum' to sum up your numbers: ")
+    if(temp == sum):
+        break
+    else:
+        num.append(temp)
+
+print(sum(num))
