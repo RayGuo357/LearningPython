@@ -1,7 +1,7 @@
-import Tkinter as tk
+import turtle
 
-app = tk.Tk(screenName="Snake",baseName="Snake", className="Snake")
-button = tk.Button()
-button["text"] = "Hello World"
-button.pack()
-app.mainloop()
+app = turtle.Screen()
+app.title("Initial window")
+app.setup(width=600, height=600)
+
+turtle.mainloop()
